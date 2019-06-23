@@ -2,7 +2,7 @@
   <label class="{% if hour.avaible == false %} disabled {% endif %}" for="time-{{ hour.time }}">
 
     {% if hour.available == true %}
-      <input type="radio" id="time-{{ hour.time }}" name="hours-time">
+      <input type="radio" id="time-{{ hour.time }}" name="date" value="{{ hour.value }}">
     {% endif %}
 
     {{ hour.time }}
